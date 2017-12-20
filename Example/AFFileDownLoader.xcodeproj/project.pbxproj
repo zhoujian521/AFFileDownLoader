@@ -386,10 +386,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AFFileDownLoader_Example/Pods-AFFileDownLoader_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFFileDownLoader/AFFileDownLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFFileDownLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

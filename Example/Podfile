@@ -1,7 +1,11 @@
+source 'git@git.coding.net:JJjianjian/QNBJPodSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 target 'AFFileDownLoader_Example' do
   pod 'AFFileDownLoader', :path => '../'
+  pod 'AFNetworking', '~> 3.1.0'
 
   target 'AFFileDownLoader_Tests' do
     inherit! :search_paths
