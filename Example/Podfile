@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AFFileDownLoader_Example' do
+  pod 'AFFileDownLoader', :path => '../'
+
+  target 'AFFileDownLoader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
