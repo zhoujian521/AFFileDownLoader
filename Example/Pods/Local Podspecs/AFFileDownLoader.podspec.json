@@ -1,15 +1,15 @@
 {
   "name": "AFFileDownLoader",
   "version": "0.1.0",
-  "summary": "A short description of AFFileDownLoader.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "AFFileDownLoader",
+  "description": "对AFNetworking断点下载的简单封装 【下载】【暂停】【继续】【取消下载】【支持对下载状态实时监控】",
   "homepage": "https://github.com/shuaijianjian/AFFileDownLoader",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "shuaijianjian": "zhoujianjian@channelsoft.com"
+    "ZJ": "zhoujianjian@channelsoft.com"
   },
   "source": {
     "git": "https://github.com/shuaijianjian/AFFileDownLoader.git",

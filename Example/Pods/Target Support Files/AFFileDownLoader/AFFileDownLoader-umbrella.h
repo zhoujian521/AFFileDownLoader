@@ -11,6 +11,7 @@
 #endif
 
 #import "AFFileDownLoader.h"
+#import "FileDownLoader.h"
 #import "FileManager.h"
 
 FOUNDATION_EXPORT double AFFileDownLoaderVersionNumber;
