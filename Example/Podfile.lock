@@ -1,5 +1,5 @@
 PODS:
-  - AFFileDownLoader (0.1.0):
+  - AFFileDownLoader (0.2.0):
     - AFNetworking (~> 3.1)
   - AFNetworking (3.1.0):
     - AFNetworking/NSURLSession (= 3.1.0)
@@ -18,17 +18,13 @@ PODS:
     - AFNetworking/NSURLSession
 
 DEPENDENCIES:
-  - AFFileDownLoader (from `../`)
+  - AFFileDownLoader
   - AFNetworking (~> 3.1.0)
 
-EXTERNAL SOURCES:
-  AFFileDownLoader:
-    :path: ../
-
 SPEC CHECKSUMS:
-  AFFileDownLoader: f60453ade15f5d45c12fab585c9534cb4826191e
+  AFFileDownLoader: bf84854558456dabbf7efc13dbbf15c0ecef73f0
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
 
-PODFILE CHECKSUM: 10a18676470168b0388157ddb0dd4f78675f2581
+PODFILE CHECKSUM: ad27325651bd98bc19d9f86c6d43353f66a2bb3d
 
 COCOAPODS: 1.4.0.beta.2

@@ -6,8 +6,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'AFFileDownLoader_Example' do
-  pod 'AFFileDownLoader', :path => '../'
-#  pod 'AFFileDownLoader'
+#  pod 'AFFileDownLoader', :path => '../'
+  pod 'AFFileDownLoader'
   pod 'AFNetworking', '~> 3.1.0'
 
   target 'AFFileDownLoader_Tests' do
