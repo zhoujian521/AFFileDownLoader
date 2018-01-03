@@ -10,9 +10,11 @@
 #endif
 #endif
 
+#import "AFDownLoaderManager.h"
 #import "AFFileDownLoader.h"
 #import "FileDownLoader.h"
 #import "FileManager.h"
+#import "NSString+MD5.h"
 
 FOUNDATION_EXPORT double AFFileDownLoaderVersionNumber;
 FOUNDATION_EXPORT const unsigned char AFFileDownLoaderVersionString[];

@@ -1,8 +1,8 @@
 {
   "name": "AFFileDownLoader",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "AFFileDownLoader",
-  "description": "对AFNetworking断点下载的简单封装 【下载】【暂停】【继续】【取消下载】【支持对下载状态实时监控】",
+  "description": "对AFNetworking断点下载的简单封装 【下载】【暂停】【继续】【取消下载】【支持对下载状态实时监控】\n对NSURLSessionDataTask断点下载的简单封装 【下载】【暂停】【继续】【取消下载】【支持对下载状态实时监控】",
   "homepage": "https://github.com/shuaijianjian/AFFileDownLoader",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/shuaijianjian/AFFileDownLoader.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

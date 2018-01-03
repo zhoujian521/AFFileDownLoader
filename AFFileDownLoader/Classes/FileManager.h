@@ -50,4 +50,12 @@
  */
 + (void)moveFileWithPath:(NSString *)sourcePath toPath:(NSString *)toPath;
 
+
+/**
+ 获取缓存路径文件大小
+
+ @param path 缓存路径
+ @return 文件大小
+ */
++ (CGFloat)getsCacheSizeWithFilePath:(NSString *)path;
 @end

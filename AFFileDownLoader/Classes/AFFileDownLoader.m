@@ -135,17 +135,23 @@
     }];
 }
 
-- (void)cancel{
-    [self.sessionDataTask cancel];
+- (void)cancelDownLoader{
+    if (self.sessionDataTask) {
+        [self.sessionDataTask cancel];
+    }
     self.state = AFSessionTaskStateCanceling;
 }
 
-- (void)resume{
-    [self.sessionDataTask resume];
+- (void)resumeDownLoader{
+    if (self.sessionDataTask && self.state == AFSessionTaskStateSuspended) {
+         [self.sessionDataTask resume];
+    }
 }
 
-- (void)suspend{
-    [self.sessionDataTask suspend];
+- (void)suspendDownLoader{
+    if (self.sessionDataTask && self.state == AFSessionTaskStateRunning) {
+        [self.sessionDataTask suspend];
+    }
     self.state = AFSessionTaskStateSuspended;
 }
 

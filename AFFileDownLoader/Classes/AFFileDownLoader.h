@@ -64,17 +64,17 @@ typedef void(^AFFileDownLoadedFailureBlock)(NSError *error);
 /**
  取消下载
  */
-- (void)cancel;
+- (void)cancelDownLoader;
 
 /**
  继续下载
  */
-- (void)resume;
+- (void)resumeDownLoader;
 
 /**
  暂停下载
  */
-- (void)suspend;
+- (void)suspendDownLoader;
 
 
 @end

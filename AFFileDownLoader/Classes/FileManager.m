@@ -78,4 +78,34 @@
     [manager moveItemAtPath:sourcePath toPath:toPath error:nil];
 }
 
+
+/**
+ 获取缓存路径文件大小
+ 
+ @param path 缓存路径
+ @return 文件大小
+ */
++ (CGFloat)getsCacheSizeWithFilePath:(NSString *)path{
+    // 总大小
+    unsigned long long size = 0;
+    NSFileManager *manager = [NSFileManager defaultManager];
+    
+    BOOL isDir = NO;
+    BOOL exist = [manager fileExistsAtPath:path isDirectory:&isDir];
+    
+    // 判断路径是否存在
+    if (!exist) return size;
+    if (isDir) { // 是文件夹
+        NSDirectoryEnumerator *enumerator = [manager enumeratorAtPath:path];
+        for (NSString *subPath in enumerator) {
+            NSString *fullPath = [path stringByAppendingPathComponent:subPath];
+            size += [manager attributesOfItemAtPath:fullPath error:nil].fileSize;
+        }
+    } else { // 是文件
+        size += [manager attributesOfItemAtPath:path error:nil].fileSize;
+    }
+    return size/1024.0/1024.0;
+}
+
+
 @end
